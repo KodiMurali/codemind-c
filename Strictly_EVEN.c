@@ -1,9 +1,9 @@
-
 #include<stdio.h>
 int main()
 {
-    int x[20],n,i,flag=0;
+    int n,i,c=0;
     scanf("%d",&n);
+    int x[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&x[i]);
@@ -14,12 +14,12 @@ int main()
         {
             if(i%2!=0)
             {
-                flag=1;
+                c++;
                 break;
             }
         }
     }
-    if(flag==0)
+    if(c==0)
     {
         printf("True");
     }
